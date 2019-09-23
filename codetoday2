@@ -1,0 +1,596 @@
+var a;
+undefined
+typeof a;
+"undefined"
+a = 100;
+100
+typeof a;
+"number"
+a=10000000;
+10000000
+typeof a;
+"number"
+a=1000.20;
+1000.2
+typeof a;
+"number"
+a = "Hello";
+"Hello"
+typeof a;
+"string"
+a= 'Hello';
+"Hello"
+typeof a;
+"string"
+a = "Let's Do It ";
+"Let's Do It "
+a= `ghfdjkghdfgfdhjkghhdfghkfdhjk
+hgkjdfhgjk
+gdhgkjhdf
+gdfhgjk`;
+"ghfdjkghdfgfdhjkghhdfghkfdhjk
+hgkjdfhgjk
+gdhgkjhdf
+gdfhgjk"
+a;
+"ghfdjkghdfgfdhjkghhdfghkfdhjk
+hgkjdfhgjk
+gdhgkjhdf
+gdfhgjk"
+a = true;
+true
+typeof a;
+"boolean"
+true + true
+2
+a = 1000;
+1000
+a + true - false;
+1001
+var a = 100;
+undefined
+var b = "200";
+undefined
+typeof a;
+"number"
+typeof b;
+"string"
+a + b 
+"100200"
+a+ parseInt(b)
+300
+a - b;
+-100
+a= "Amit";
+"Amit"
+b = "Srivstava";
+"Srivstava"
+a + b
+"AmitSrivstava"
+a = 100;
+100
+b = "200";
+"200"
+a  * b;
+20000
+a /b
+0.5
+a= "ten";
+"ten"
+b=20;
+20
+a - b;
+NaN
+a= "";
+""
+a * 0.20;
+0
+a - 100
+-100
+a = "ten";
+"ten"
+a * 0.20;
+NaN
+isNaN(a * 0.20)?0: a*0.20;
+0
+a =1000;
+1000
+isNaN(a * 0.20)?0: a*0.20;
+200
+a = 100;
+100
+a / 0;
+Infinity
+var c = a / 0;
+undefined
+c;
+Infinity
+isFinite(c)?c:0;
+0
+c;
+Infinity
+var d = 100;
+undefined
+d;
+100
+c;
+Infinity
+typeof d;
+"number"
+typeof c;
+"number"
+c = 100 - "Hello";
+NaN
+c;
+NaN
+typeof c;
+"number"
+a = 100;
+100
+b = 200;
+200
+console.log("A is "+a+" And B is "+b);
+VM2105:1 A is 100 And B is 200
+undefined
+console.log("A is "+a+10+" And B is "+b);
+VM2126:1 A is 10010 And B is 200
+undefined
+console.log("A is "+(a+10)+" And B is "+b);
+VM2150:1 A is 110 And B is 200
+undefined
+console.log(`A is ${a} and B is ${b}`); // string interpolation
+VM2270:1 A is 100 and B is 200
+undefined
+var a = "Amit";
+undefined
+typeof a;
+"string"
+var e = new String("Hello");
+undefined
+typeof e;
+"object"
+e;
+String {"Hello"}
+a;
+"Amit"
+typeof a;
+"string"
+var t = 1000;
+undefined
+var gg = new Number(1000);
+undefined
+typeof gg;
+"object"
+var arr = [10,20,30,40];
+undefined
+typeof arr;
+"object"
+arr instanceof Array;
+true
+e;
+String {"Hello"}
+e instanceof String;
+true
+typeof String;
+"function"
+typeof Array;
+"function"
+var arr = [];
+undefined
+var tt = new Boolean(true);
+undefined
+arr instanceof Array;
+true
+arr instanceof Object;
+true
+typeof Object;
+"function"
+var arr = [10,20,30,40];
+undefined
+console.log("Arr is "+arr);
+VM3150:1 Arr is 10,20,30,40
+undefined
+console.log("Arr is "+arr.toString());
+VM3190:1 Arr is 10,20,30,40
+undefined
+a=100;
+100
+b = "200";
+"200"
+a -b;
+-100
+a*b
+20000
+a%b
+100
+b = "Hello";
+"Hello"
+a *b;
+NaN
+arr;
+(4) [10, 20, 30, 40]
+a = "Hello";
+"Hello"
+a.toUpperCase();
+"HELLO"
+var e = new String("Hello");
+undefined
+e.toUpperCase();
+"HELLO"
+var obj = {}; // Object Literal
+undefined
+typeof obj;
+"object"
+obj instanceof Object;
+true
+var obj = {id:1001, name:'Ram'};
+undefined
+obj;
+{id: 1001, name: "Ram"}
+obj.id;
+1001
+obj.name;
+"Ram"
+var obj = {};
+undefined
+obj;
+{}
+p1 = 1000
+1000
+var obj = {};
+undefined
+obj.age = 21
+21
+obj.name = "Ram";
+"Ram"
+obj;
+{age: 21, name: "Ram"}
+delete obj.age;
+true
+obj;
+{name: "Ram"}
+obj  = {1:2,3:4};
+{1: 2, 3: 4}
+obj.1;
+VM4116:1 Uncaught SyntaxError: Unexpected number
+obj[1]
+2
+obj = {"A_B":111,"E R":444};
+{A_B: 111, E R: 444}
+obj.E R;
+VM4215:1 Uncaught SyntaxError: Unexpected identifier
+obj.["E R"];
+VM4227:1 Uncaught SyntaxError: Unexpected token [
+obj["E R"];
+444
+const ee = 1000;
+undefined
+ee++;
+VM4291:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:3
+(anonymous) @ VM4291:1
+const MAX  = 111;
+undefined
+const obj = {};
+VM4371:1 Uncaught SyntaxError: Identifier 'obj' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM4371:1
+const obj1 = {};
+undefined
+obj1.a  = 1000;
+1000
+obj1.b = 333;
+333
+obj1;
+{a: 1000, b: 333}
+obj1.a++;
+1000
+obj1.a;
+1001
+obj1 = {e:1000};
+VM4578:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:6
+(anonymous) @ VM4578:1
+const arr =[];
+VM4632:1 Uncaught SyntaxError: Identifier 'arr' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM4632:1
+const arr11 =[];
+undefined
+arr11.push(1000);
+1
+arr11;
+[1000]
+arr11.push(1000);
+2
+var w = {a:100, b:200};
+undefined
+typeof w;
+"object"
+var t = 1000;
+undefined
+typeof t;
+"number"
+w instanceof Object;
+true
+typeof Object;
+"function"
+function show(){
+console.log("I am Show ");
+}
+undefined
+typeof show;
+"function"
+show();
+VM5455:2 I am Show 
+undefined
+show(190);
+VM5455:2 I am Show 
+undefined
+show(10,20);
+VM5455:2 I am Show 
+undefined
+show(10,"Hello",true)
+VM5455:2 I am Show 
+undefined
+show([10,20],{id:1001},"Hello");
+VM5455:2 I am Show 
+undefined
+function add(){
+console.log("I am Add ");
+}
+undefined
+add(10,20);
+VM5779:2 I am Add 
+undefined
+add(10,20,[90,100]);
+VM5779:2 I am Add 
+undefined
+add(10,20,[90,100],"ten");
+VM5779:2 I am Add 
+undefined
+console.dir(add);
+VM5887:1 ƒ add()arguments: nullcaller: nulllength: 0name: "add"prototype: {constructor: ƒ}__proto__: ƒ ()[[FunctionLocation]]: VM5779:1[[Scopes]]: Scopes[2]
+undefined
+function add(){
+console.log("I am Add ",arguments.length);
+}
+undefined
+add(10,20,[90,100],"ten");
+VM5951:2 I am Add  4
+undefined
+add(10,20);
+VM5951:2 I am Add  2
+undefined
+function add(){
+//console.log("I am Add ",arguments.length);
+var sum = 0;
+for(let i = 0; i<arguments.length; i++){
+sum+=arguments[i];
+}
+return sum;
+}
+undefined
+add();
+0
+add(1,2);
+3
+add(1,2,3,4,5,6,7,8);
+36
+add(1,2,3,4,5,"6",7,8);
+"15678"
+function add(){
+//console.log("I am Add ",arguments.length);
+var sum = 0;
+for(let i = 0; i<arguments.length; i++){
+sum+=parseInt(arguments[i]);
+}
+return sum;
+}
+undefined
+add(1,2,3,4,5,"6",7,8);
+36
+add(1,2,3,4,"ten","6",7,8);
+NaN
+parseInt("ten");
+NaN
+parseInt("ten") + 20;
+NaN
+function add(){
+//console.log("I am Add ",arguments.length);
+var sum = 0;
+for(let i = 0; i<arguments.length; i++){
+sum+=isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]);
+}
+return sum;
+}
+undefined
+add(1,2,3,4,"ten","6",7,8);
+31
+function getNumber(){
+return 1000;
+}
+undefined
+function getNumber2(){
+return 2000;
+}
+undefined
+parseInt(getNumber);
+//add(1,2,3,getNumber, getNumber2,"10");
+NaN
+add(1,2,3,getNumber, getNumber2,"10");
+16
+function add(){
+//console.log("I am Add ",arguments.length);
+var sum = 0;
+for(let i = 0; i<arguments.length; i++){
+if(typeof arguments[i]=="function"){
+arguments[i] = arguments[i]();
+}
+sum+=isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]);
+}
+return sum;
+}
+undefined
+add(1,2,3,getNumber, getNumber2,"10");
+3016
+function jQuery(){
+console.log("JQuery ");
+}
+undefined
+var $= jQuery;
+undefined
+jQuery();
+VM6867:2 JQuery 
+undefined
+$();
+VM6867:2 JQuery 
+undefined
+function disp(){
+console.log("Global Function ");
+}
+undefined
+window;
+Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+window.show();
+VM5455:2 I am Show 
+undefined
+typeof window;
+"object"
+this
+Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+this == window;
+true
+function Math(){
+var sin=function(){
+}
+var cos=function(){
+}
+return [sin,cos];
+}
+undefined
+var e = Math();
+undefined
+e;
+(2) [ƒ, ƒ]
+function Math(){
+var sin=function(){
+ console.log("sin");
+}
+var cos=function(){
+console.log("cos");
+}
+return [sin,cos];
+}
+undefined
+Math()[0]();
+VM7435:3 sin
+undefined
+
+show();
+function show(){
+// var t ;
+console.log("T is ",t);
+if(10>2){
+var t = 100;
+}
+console.log("T is ",t);
+}
+
+VM7622:5 T is  undefined
+VM7622:9 T is  100
+undefined
+tt();
+var tt =function(){
+console.log("TT Show ");
+}
+VM7695:1 Uncaught TypeError: tt is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM7695:1
+function Math(){
+var sin=function(){
+ console.log("sin");
+}
+var cos=function(){
+console.log("cos");
+}
+return [sin,cos];
+}
+undefined
+var r =Math();
+undefined
+r;
+(2) [ƒ, ƒ]0: ƒ ()1: ƒ ()length: 2__proto__: Array(0)
+function Math(){
+var sin=function sin(){
+ console.log("sin");
+}
+var cos=function cos(){
+console.log("cos");
+}
+return [sin,cos];
+}
+undefined
+var r =Math();
+undefined
+r;
+(2) [ƒ, ƒ]0: ƒ sin()1: ƒ cos()length: 2__proto__: Array(0)
+function Math(){
+var sin=function (){
+ console.log("sin");
+}
+var cos=function (){
+console.log("cos");
+}
+return {"sin":sin,"cos":cos};
+}
+undefined
+var r =Math();
+undefined
+r;
+{sin: ƒ, cos: ƒ}
+r.sin()
+VM7844:3 sin
+undefined
+function add(x,y){
+return x + y;
+}
+undefined
+var adder = (x,y)=>x+y;
+undefined
+typeof adder;
+"function"
+adder(100,200);
+300
+var adder = (x,y)=>{
+console.log("X is "+x+" and Y is "+y);
+return x+y;
+}
+undefined
+adder(10,20);
+VM8166:2 X is 10 and Y is 20
+30
+function calc(){
+var x = 100;
+var add =function(y){
+var z  = x + y;
+return z;
+}
+var sub =function(y){
+var z  = x - y;
+return z;
+}
+
+	return {add,sub};
+}
+undefined
+var m  = calc();
+undefined
+m;
+{add: ƒ, sub: ƒ}
+x;
+VM8458:1 Uncaught ReferenceError: x is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM8458:1
+m.add(900);
+1000
