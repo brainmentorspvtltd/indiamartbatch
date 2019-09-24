@@ -1,0 +1,184 @@
+var arr = [10,20,30,40,50];
+undefined
+arr.push(10);
+6
+arr;
+(6) [10, 20, 30, 40, 50, 10]
+arr.pop();
+10
+arr;
+(5) [10, 20, 30, 40, 50]
+arr.splice(1);
+(4) [20, 30, 40, 50]
+arr;
+[10]
+var arr = [10,20,30,40,50];
+undefined
+arr.splice(1,1);
+[20]
+arr;
+(4) [10, 30, 40, 50]
+arr.splice(0);
+(4) [10, 30, 40, 50]
+arr;
+[]
+var arr = [10,20,30,40,50];
+undefined
+arr = [];
+[]
+arr;
+[]
+var arr = [10,20,30,40,50];
+undefined
+arr.length=0;
+0
+arr;
+[]
+var arr = [10,20,30,40,50];
+undefined
+arr.length= arr.length-2;
+3
+arr;
+(3) [10, 20, 30]
+var arr = [10,20,30,40,50,10,20,10];
+undefined
+function compare(ele){
+	return ele == 10;
+}
+arr.find(compare);
+10
+function compare(ele){
+	return ele == 100;
+}
+arr.find(compare);
+undefined
+arr.find(ele=>ele==10);
+10
+arr.findIndex(ele=>ele==10);
+0
+arr.findIndex(ele=>ele==100);
+-1
+arr;
+(8) [10, 20, 30, 40, 50, 10, 20, 10]
+var t = arr.filter(ele=>ele==10);
+undefined
+t;
+(3) [10, 10, 10]
+ arr.filter(ele=>ele==10).length;
+3
+var a = [10,20,30];
+undefined
+var b = [90,100];
+undefined
+var t = [...a,...b];
+undefined
+t;
+(5) [10, 20, 30, 90, 100]
+arr;
+(8) [10, 20, 30, 40, 50, 10, 20, 10]
+var g = arr.filter(ele=>true);
+undefined
+g;
+(8) [10, 20, 30, 40, 50, 10, 20, 10]
+var f = arr.map(ele=>ele);
+undefined
+f;
+(8) [10, 20, 30, 40, 50, 10, 20, 10]
+var f = arr.map(ele=>"Rs "+ele+".00");
+undefined
+f;
+(8) ["Rs 10.00", "Rs 20.00", "Rs 30.00", "Rs 40.00", "Rs 50.00", "Rs 10.00", "Rs 20.00", "Rs 10.00"]
+for(let i =0 ; i<arr.length; i++){
+console.log(arr[i]);
+}
+VM1505:2 10
+VM1505:2 20
+VM1505:2 30
+VM1505:2 40
+VM1505:2 50
+VM1505:2 10
+VM1505:2 20
+VM1505:2 10
+undefined
+for(let ele of arr){
+console.log(ele);
+}
+VM1589:2 10
+VM1589:2 20
+VM1589:2 30
+VM1589:2 40
+VM1589:2 50
+VM1589:2 10
+VM1589:2 20
+VM1589:2 10
+undefined
+arr.forEach(ele=>console.log(ele));
+VM1666:1 10
+VM1666:1 20
+VM1666:1 30
+VM1666:1 40
+VM1666:1 50
+VM1666:1 10
+VM1666:1 20
+VM1666:1 10
+undefined
+arr.forEach((ele,index)=>console.log(ele,"  ",index));
+VM1748:1 10 "  " 0
+VM1748:1 20 "  " 1
+VM1748:1 30 "  " 2
+VM1748:1 40 "  " 3
+VM1748:1 50 "  " 4
+VM1748:1 10 "  " 5
+VM1748:1 20 "  " 6
+VM1748:1 10 "  " 7
+undefined
+arr.reduce((ele,acc)=>acc+=ele,acc=0);
+190
+arr.reduce((acc,ele)=>acc+=ele,acc=0);
+190
+arr.reduce((acc,ele)=>{
+if(ele==10){
+acc.push(ele);
+}
+return acc;
+},acc=[]);
+(3) [10, 10, 10]
+arr.reduce((acc,ele)=>{
+if(ele==10){
+acc.push(ele);
+}
+return acc;
+},acc=[]).length;
+3
+arr;
+(8) [10, 20, 30, 40, 50, 10, 20, 10]
+arr = arr.filter(e=>e!=10);
+(5) [20, 30, 40, 50, 20]
+arr;
+(5) [20, 30, 40, 50, 20]
+arr = [90,10,2,5,11,55];
+(6) [90, 10, 2, 5, 11, 55]
+arr.sort((a,b)=>a-b);
+(6) [2, 5, 10, 11, 55, 90]
+arr.sort((a,b)=>b-a);
+(6) [90, 55, 11, 10, 5, 2]
+arr.sort((a,b)=>a.localeCompare(b));
+VM2455:1 Uncaught TypeError: a.localeCompare is not a function
+    at <anonymous>:1:19
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM2455:1
+(anonymous) @ VM2455:1
+arr.sort((a,b)=>a.localCompare(b));
+VM2487:1 Uncaught TypeError: a.localCompare is not a function
+    at <anonymous>:1:19
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM2487:1
+(anonymous) @ VM2487:1
+"amit".localeCompare("anil")
+-1
+arr = ["amit","ram","anil"];
+(3) ["amit", "ram", "anil"]
+arr.sort((a,b)=>a.localeCompare(b));
+(3) ["amit", "anil", "ram"]
