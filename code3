@@ -1,0 +1,101 @@
+function createEmp(id, name, salary){
+var emp  = {};
+emp.id = id;
+emp.name = name;
+emp.salary = salary;
+return emp;
+}
+undefined
+var ram = createEmp(1001, "Ram",9999);
+undefined
+ram;
+{id: 1001, name: "Ram", salary: 9999}
+ram instanceof Object;
+true
+function Employee(id, name, salary){
+//var this  = {};
+this.id = id;
+this.name = name;
+this.salary = salary;
+//return emp; return this;
+}
+var ram = new Employee(1001, "Ram",9999);
+undefined
+ram;
+Employee {id: 1001, name: "Ram", salary: 9999}
+ram instanceof Employee;
+true
+function Employee(id, name, salary){
+//var this  = {};
+this.id = id;
+this.name = name;
+this.salary = salary;
+this.print=function(){
+console.log('Id is '+this.id+' Name is '+this.name+ 'Salary is '+this.salary);
+}
+//return emp; return this;
+}
+var ram = new Employee(1001, "Ram",9999);
+undefined
+ram instanceof Employee;
+true
+ram;
+Employee {id: 1001, name: "Ram", salary: 9999, print: ƒ}
+var shyam = new Employee(1002, "Shyam",6666);
+undefined
+shyam;
+Employee {id: 1002, name: "Shyam", salary: 6666, print: ƒ}
+Employee.prototype.disp= function(){
+console.log('Id is '+this.id+ ' NAme is '+this.name+' Salary is '+this.salary);
+}
+ƒ (){
+console.log('Id is '+this.id+ ' NAme is '+this.name+' Salary is '+this.salary);
+}
+var tim = new Employee(1000, "Tim",9999);
+undefined
+tim;
+Employee {id: 1000, name: "Tim", salary: 9999, print: ƒ}id: 1000name: "Tim"print: ƒ ()salary: 9999__proto__: disp: ƒ ()constructor: ƒ Employee(id, name, salary)__proto__: constructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+Array.prototype.ownfunction=function(){
+console.log("Own ");
+}
+ƒ (){
+console.log("Own ");
+}
+var arr = [1,2];
+undefined
+arr.ownfunction();
+VM4524:2 Own 
+undefined
+class A{
+constructor(x,y){
+this.x = x;
+this.y =y;
+}
+show(){
+console.log('X is '+this.x +' Y is '+this.y);
+}
+}
+undefined
+var obj = new A(10,20);
+undefined
+obj;
+A {x: 10, y: 20}x: 10y: 20__proto__: constructor: class Ashow: ƒ show()__proto__: Object
+if(10>2){
+A.prototype.add = function(){}
+}
+ƒ (){}
+ram;
+Employee {id: 1001, name: "Ram", salary: 9999, print: ƒ}id: 1001name: "Ram"print: ƒ ()salary: 9999__proto__: disp: ƒ ()constructor: ƒ Employee(id, name, salary)__proto__: Object
+class B extends A{
+constructor(){
+super(10,20);
+}
+print(){
+console.log(this.x + this.y);
+}
+}
+var obj = new B();
+undefined
+obj.print();
+VM5300:6 30
+undefined
