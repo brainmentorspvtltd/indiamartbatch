@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop App</title>
+    <script src="js/product.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+<body>
+    <div>
+        <input id='searchtxt' type="text" placeholder="Type To Search ">
+        <label>Sort</label>
+
+        <select id="sortby">
+            <option value="-1">Select Sort</option>
+            <option value="price">By Price</option>
+            <option value="">By Brand</option>
+        </select>
+        <label>Range</label>
+        <input type="range" min="1000" max="10000" step="100">
+        <p>Items in Cart <span id='total'></span></p>
+        <fieldset>
+            <legend>Products</legend>
+            <div id='products'>
+
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>
