@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .row {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-areas: "header header" 
+                                 "main sidebar" 
+                                "footer footer";
+        }
+        header {
+            background-color: lightgray;
+            grid-area: header;
+        }
+        main {
+            background-color: lightblue;
+            grid-area: main;
+            height: 400px;
+        }
+        aside {
+            background-color: lightgreen;
+            grid-area: sidebar;
+            height: 400px;
+        }
+        footer {
+            background-color: lime;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row">
+    <header>
+        <h2>This is header</h2>
+    </header>
+
+    <main>
+        <h2>This is main</h2>
+    </main>
+
+    <aside>
+        <h2>This is sidebar</h2>
+    </aside>
+    
+    <footer>
+        <h2>This is footer</h2>
+    </footer>
+    
+</div>
+
+    
+</body>
+</html>

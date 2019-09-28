@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* #div_1 h2 {
+            color: red;
+        } */
+        #div_1 .child h2 {
+            color: red;
+        }
+        #div_1 > h2 {
+            background-color: lightgray;
+        }
+        #div_1 + h2 {
+            background-color: lightsalmon;
+        }
+        #div_1 ~ h2 {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Id and Class</h1>
+
+    <!-- id - unique
+    - an element cannot have multiple ids
+    - an id cannot be repeated on page
+    class - grouping
+    - an element can have any number of classes
+    - a class can be repeated any number of time -->
+
+    <div id="div_1">
+        <h2>This is inside div_1</h2>
+        <div class="child">
+            <h2>This is inside div_1_child</h2>
+        </div>
+        <div class="child">
+                <h2>This is inside div_1_child</h2>
+            </div>
+    </div>
+
+    <h2>This heading is outside div_1</h2>
+    <h2>This heading is outside div_1</h2>
+    <h2>This heading is outside div_1</h2>
+
+    <hr>
+    <div id="div_2">
+            <h2>This is inside div_1</h2>
+            <div class="child">
+                <h2>This is inside div_1_child</h2>
+            </div>
+            <div class="child">
+                    <h2>This is inside div_1_child</h2>
+                </div>
+        </div>
+    
+</body>
+</html>

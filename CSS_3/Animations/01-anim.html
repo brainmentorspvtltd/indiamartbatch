@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 20%;
+            position: absolute;
+            left: 40%;
+            bottom: 0px;
+            animation-name: car;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+        }
+        @keyframes car {
+            /* from {
+                left: 40%;
+                bottom: 0px;
+            }
+            to {
+                left: 0%;
+                bottom: 0px;
+            } */
+            0% {
+                left: 40%;
+                bottom: 0px;
+            }
+            25% {
+                left: 0%;
+                bottom: 0px;
+                transform: rotate(90deg);
+            }
+            50% {
+                left: 0%;
+                bottom: 80%;
+                transform: rotate(90deg);
+            }
+            75% {
+                left: 45%;
+                bottom: 80%;
+                transform: rotate(180deg);
+            }
+            100% {
+                left: 45%;
+                bottom: 0%;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://purepng.com/public/uploads/large/purepng.com-car-top-viewcarscar-top-view-961524670079fkdn8.png" alt="">
+    
+</body>
+</html>

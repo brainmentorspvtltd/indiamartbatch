@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+}
+img {
+    width: 100%;
+}
+
+/* :after and :before */
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {
+    background-color: lightblue;
+    width: 30%;
+    float: left;
+}
+.col-2 {
+    width: 40%;
+    float: right;
+    background-color: lightgray;
+}
+
+.div-1 {
+    background-color: lightslategray;
+}
+
+.blank {
+    clear: both;
+}
